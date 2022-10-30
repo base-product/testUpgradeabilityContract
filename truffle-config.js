@@ -9,27 +9,17 @@ module.exports = {
     //   port: 8545,
     //   network_id: '*'
     // },
-    ropsten: {
+    bsctestnet: {
       provider: function () {
         return new HDWalletProvider(
-          process.env.OPERATOR_PRIVATE_KEY,
-          'https://ropsten.infura.io/v3/'.concat(process.env.INFURA_PROJECT_ID)
+          'PHASES',
+          'NODE_URL'
         );
       },
       gas: 6721975,
-      network_id: 3,
+      network_id: 97,
     },
 
-    rinkeby: {
-      provider: function () {
-        return new HDWalletProvider(
-          process.env.OPERATOR_PRIVATE_KEY,
-          'https://rinkeby.infura.io/v3/'.concat(process.env.INFURA_PROJECT_ID)
-        );
-      },
-      gas: 10000000,
-      network_id: 4,
-    },
   },
   rpc: {
     host: 'localhost',
