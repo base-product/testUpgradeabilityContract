@@ -1,5 +1,6 @@
 require('dotenv').config();
-
+const mnemonic = process.env["MNEMONIC"];
+// const privateKey = process.env["PRIVATE_KEY"];
 var HDWalletProvider = require('@truffle/hdwallet-provider');
 
 module.exports = {
@@ -12,11 +13,11 @@ module.exports = {
     bsctestnet: {
       provider: function () {
         return new HDWalletProvider(
-          'PHASES',
-          'NODE_URL'
+            mnemonic,
+          'https://data-seed-prebsc-1-s1.binance.org:8545'
         );
       },
-      gas: 6721975,
+      // gas: 50000000,
       network_id: 97,
     },
 
