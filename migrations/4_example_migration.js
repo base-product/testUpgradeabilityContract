@@ -7,16 +7,28 @@ const DAIProxyAdmin = artifacts.require('DAIProxyAdmin');
 
 module.exports = async function(deployer) {
     // deployment steps
-    deployer.deploy(DAIProxyAdmin);
 
-    // let dai = await DAILogic1.at('0xf7f8DF719Bb7a5f6Aa11F14fC5b15F7085c9bAc0');
-    // let data = await dai.contract.methods.initialize('DAI', 'DAI').encodeABI();
-    // console.log(data)
-    // deployer.deploy(DAIProxy);
-    // await deployer.deploy(DAIProxy,'0xf7f8DF719Bb7a5f6Aa11F14fC5b15F7085c9bAc0','0x2C92E5dD8d34160fEb9Eb3E88Fde0635dEa3EcFb');
-
+    // Step 1: deploy DAIProxyAdmin
     // deployer.deploy(DAIProxyAdmin);
 
+    // Step 2: deploy DAILogic1 and get info of this contract
+    // deployer.deploy(DAILogic1);
 
+    // Step 3: deploy DAILogic2 and get info of this contract
     // deployer.deploy(DAILogic2);
+
+    // Step 4: deploy DAIProxy with param1 is address of DAILogic1, param2 is address of DAIProxyAdmin, param3 is data of DAILogic1,
+    // param1 is address of DAILogic1: 0x1B3D68B686717e7F77FcAEe8551C5ccb55073bE7
+    // param2 is address of DAILogic1: 0x829ff072beD98dAbDA16c2Be3F09cd7f2509a14e
+    // param3 is data of DAILogic1,
+
+    // let dai = await DAILogic1.at('0x1B3D68B686717e7F77FcAEe8551C5ccb55073bE7');
+    // let data = await dai.contract.methods.initialize('DAI', 'DAI').encodeABI();
+    // console.log(data)
+    // await deployer.deploy(DAIProxy,'0x1B3D68B686717e7F77FcAEe8551C5ccb55073bE7','0x829ff072beD98dAbDA16c2Be3F09cd7f2509a14e',data);
+
+    // Step 5: Go to https://eth95.dev/
+    // test "mint" func when call to DAIProxy( forward to DAILogic1)
+    // test "upgrade" func when call to DAIProxyAdmin to upgrade DAIProxy forward to DAILogic2
+    // test "mint" func when call to DAIProxy( forward to DAILogic2) to see diff logic from this func
 };

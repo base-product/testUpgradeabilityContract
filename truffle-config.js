@@ -1,5 +1,5 @@
 require('dotenv').config();
-const mnemonic = process.env["MNEMONIC"];
+const mnemonic = "write twelve guess bundle gift board diet injury future script turkey under";
 // const privateKey = process.env["PRIVATE_KEY"];
 var HDWalletProvider = require('@truffle/hdwallet-provider');
 

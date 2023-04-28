@@ -1,0 +1,60 @@
+   Replacing 'DAIProxyAdmin'
+   -------------------------
+   > transaction hash:    0x4a7ddb096f57edf0ffca341bd0d58fb4587d9e73d5f0713b15d4316b09a8e468
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x829ff072beD98dAbDA16c2Be3F09cd7f2509a14e
+   > block number:        29269313
+   > block timestamp:     1682499624
+   > account:             0x65243e4705Dc1dd3B05E9259Cf47999CA2Acb4B0
+   > balance:             0.81723857
+   > gas used:            879962 (0xd6d5a)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01759924 ETH
+
+
+      Replacing 'DAILogic1'
+   ---------------------
+   > transaction hash:    0xcf6752082fe27919df60ff228c883f7cd6c7e8ad184fdde57bc857af4f5f04c3
+   > Blocks: 2            Seconds: 4
+   > contract address:    0x61c7B7a879e36F716aaAe744b9dc9bcA920F851F
+   > block number:        29269493
+   > block timestamp:     1682500164
+   > account:             0x65243e4705Dc1dd3B05E9259Cf47999CA2Acb4B0
+   > balance:             0.77855567
+   > gas used:            1934145 (0x1d8341)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0386829 ETH
+
+
+   Replacing 'DAIProxy'
+   --------------------
+   > transaction hash:    0x04b628f91053beff7b8b2a58669b72f5b07eb199673a1ecd0f5c5a58a8a2e81c
+   > Blocks: 1            Seconds: 4
+   > contract address:    0xE48a56E1C43FeC4DF048DFdb570Ff7A18208A897
+   > block number:        29269606
+   > block timestamp:     1682500503
+   > account:             0x65243e4705Dc1dd3B05E9259Cf47999CA2Acb4B0
+   > balance:             0.76396681
+   > gas used:            729443 (0xb2163)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01458886 ETH
+
+    Replacing 'DAILogic2'
+   ---------------------
+   > transaction hash:    0xf3dbbecd1416da6962fc21fd86de97bf90f298ff1e8b4dfe20a812a55c7829c3
+   > Blocks: 2            Seconds: 4
+   > contract address:    0x1B3D68B686717e7F77FcAEe8551C5ccb55073bE7
+   > block number:        29270015
+   > block timestamp:     1682501730
+   > account:             0x65243e4705Dc1dd3B05E9259Cf47999CA2Acb4B0
+   > balance:             0.72378256
+   > gas used:            1934817 (0x1d85e1)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03869634 ETH
+
+
+
