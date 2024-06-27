@@ -1,3 +1,5 @@
+### Node env
+    nvm use 18
 ### Tools
     https://eth95.dev/
     https://remix.ethereum.org/
@@ -7,9 +9,13 @@
 
 ### Migrate use for deploy to blockchain
 
+    truffle migrate --network development
     truffle migrate --network bsctestnet
-    truffle console --network bsctestnet
 
+### Connect to blockchain
+
+    truffle console --network development
+    truffle console --network bsctestnet
 
 ### Deployment step: 
 
